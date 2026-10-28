@@ -1,0 +1,9 @@
+# runtime state and switches (never commit)
+buttondown_state.json
+buttondown_mode.txt
+.env
+.env.*
+*.key
+__pycache__/
+*.pyc
+*.bak*
