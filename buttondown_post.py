@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Post one Main Street AI Brief issue to Buttondown. Called once per normal issue day by the daily publishing job (step 8).
+"""Post one Main Street AI Brief issue to Buttondown. Called once per Friday issue by the weekly publishing job (step 8).
 Usage: python3 buttondown_post.py <issue-slug> [--dry-run]
 Reads the API key from env BUTTONDOWN_API_KEY only; never prints/logs/writes it.
 Mode switch: file site/buttondown_mode.txt = 'draft' (default, creates a DRAFT for the owner to review) or 'send' (queues to subscribers).

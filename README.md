@@ -6,7 +6,7 @@ Code that turns each published issue of [Main Street AI Brief](https://mainstree
 
 | File | What it does |
 |---|---|
-| `buttondown_post.py` | Posts one issue to Buttondown. Run once per normal issue day. |
+| `buttondown_post.py` | Posts one issue to Buttondown. Run once per Friday issue. |
 | `bd_brand.py` | `brand(body_html)`: wraps the issue's email HTML in the brand header and inline styles. Pure string function, no network. |
 | `tests/test_brand.py` | Offline tests for `bd_brand.py` (`python3 -m unittest`). |
 | `CONTRIBUTING.md` | How to change this repo. Read it before opening a PR. |
@@ -21,9 +21,9 @@ The email body is **not** built in this repo. It is the `feed2(i)` function in t
 
 `feed2` depends on many generator internals (issue JSON, link helpers, UTM tags), so it stays in `build.py` and was not copied here. Branding and styling of the email are done here, in `bd_brand.py`.
 
-## How the daily job runs it
+## How the weekly Friday job runs it
 
-After the day's issue is published to the website and the live pages return 200, the job runs:
+After the Friday issue is published to the website and the live pages return 200, the job runs:
 
 ```
 cd <generator folder> && python3 buttondown_post.py <issue-slug>

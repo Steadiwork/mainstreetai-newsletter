@@ -13,7 +13,7 @@ HEADER=(HINTS+
  f'style="width:100%;background-color:{NAVY};margin:0 0 20px 0;color-scheme:light only">'
  f'<tr><td align="center" bgcolor="{NAVY}" style="background-color:{NAVY};padding:16px 12px;text-align:center">'
  f'<a href="{SITE}" style="text-decoration:none;color:#FFFFFF"><img src="{LOGO}" width="369" height="56" '
- f'alt="Main Street AI Brief - Daily AI tips for small business owners" '
+ f'alt="Main Street AI Brief - Weekly AI tips for small business owners" '
  f'style="display:block;border:0;outline:none;width:100%;max-width:369px;height:auto;margin:0 auto"></a></td></tr>'
  f'<tr><td height="4" bgcolor="{OR}" style="background-color:{OR};height:4px;line-height:4px;font-size:0;mso-line-height-rule:exactly">&nbsp;</td></tr></table>')
 def _box(m):
